@@ -1,0 +1,110 @@
+html{scroll-behavior:smooth}
+
+.control-panel {
+    background: #ece0e0;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+
+#editor {
+    height: 400px;
+}
+
+.button-container {
+    text-align: right;
+    padding: 4px;
+}
+
+.output {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    min-height: inherit;
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+.footer-content{
+    display: flex;
+    height:20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rotate {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #252525;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #525f7f;
+}
+#particles-js canvas{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    z-index: -1;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.typewriter a {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #58afd1; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-weight: bolder;
+    animation:
+        typing 5.5s steps(30, end),
+        blink-caret 5.5s step-end infinite;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #58afd1;
+    }
+}
+
+
